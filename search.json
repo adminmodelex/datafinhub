@@ -1,0 +1,219 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "DATAFINHUB",
+    "section": "",
+    "text": "DataFinHub specializes in providing high-quality historical intraday financial data that serves as a reliable backbone for your trading and analytical needs. Understanding the importance of accurate past data for future analysis, our platform offers comprehensive historical datasets across various asset classes, including equities, commodities, and cryptocurrencies.\nWhether you're backtesting trading strategies, conducting academic research, or implementing machine learning models, DataFinHub offers you a treasure trove of data points and time series that can enhance the rigor of your analysis.\nChoose DataFinHub for your historical financial data requirements, and empower your decision-making process with unparalleled insights from the past.\nThe data provided by DataFinHub comes in a meticulously structured format designed for easy interpretation and integration into your workflow. Each data point consists of the following elements:\n\nTimestamp: The precise date and time at which the data was recorded, typically in the format of YYYY-MM-DD HH:MM:SS.\nOpen: The price at which a security first trades upon the opening of an exchange on a given trading day.\nHigh: The highest traded price of a security during the time interval represented.\nLow: The lowest traded price of a security during the time interval represented.\nClose: The last price at which a security trades during the specific time interval.\nVolume: The total number of shares or contracts traded during the given time interval.\n\nThis OHLCV (Open, High, Low, Close, Volume) format provides a comprehensive snapshot of market activity, making it highly suitable for various types of financial analysis, including trend identification, volatility measurement, and strategy backtesting."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "DATAFINHUB",
+    "section": "",
+    "text": "At DataFinHub, we're more than just a platform; we're a community of financial enthusiasts committed to democratizing access to high-quality financial data. Founded by a team of seasoned professionals with backgrounds in finance, data science, and technology, we realized the gap that existed between the availability of comprehensive and accurate financial data and the individuals and institutions that needed it the most.\nWe're headquartered in the financial hub of the city, but our reach is global. Our technology infrastructure is built to handle massive volumes of data, assuring quick and seamless access regardless of your geographical location.\nOur mission is to empower traders, researchers, and financial professionals with the tools they need to make informed decisions. We do this by providing a platform that is not only rich in data but also user-friendly and reliable. So, whether you're an individual trader looking for the latest stock prices or a research institution in need of large sets of varied financial data, DataFinHub is designed with you in mind.\nFeel free to delve into the wealth of data and features we offer, and enhance your financial ventures through the power of accurate and reliable information."
+  },
+  {
+    "objectID": "crypto.html",
+    "href": "crypto.html",
+    "title": "DATAFINHUB",
+    "section": "",
+    "text": "CRYPTO API\nTICKER OPTION {TICKER}\nTIME FRAME OPTION {TIMEFRAME}"
+  },
+  {
+    "objectID": "fx.html",
+    "href": "fx.html",
+    "title": "DATAFINHUB",
+    "section": "",
+    "text": "library(DT)\nfx_ticker_dates_listing &lt;- read.csv(\"~/Desktop/DATAFINHUB/fx_ticker_dates_listing.txt\")\ndatatable(fx_ticker_dates_listing)"
+  },
+  {
+    "objectID": "stock.html",
+    "href": "stock.html",
+    "title": "DATAFINHUB",
+    "section": "",
+    "text": "STOCK API\n\nhttps://datafinhub.s3.ca-central-1.amazonaws.com/\n\nTICKER OPTION {TICKER}\n\nThe ticker is available on the ticker list page\n\nTIME FRAME OPTION {TIMEFRAME}\n\nDaily =&gt; “1day”\nEach 1 hour =&gt; “1hour”\nEach 30 minutes =&gt; “30min”\nEach 5 minutes =&gt; “5min”\nEach 1 minutes =&gt; “1min”\n\nURL ENPOINT\n\nhttps://datafinhub.s3.ca-central-1.amazonaws.com/{TICKER}_full_{TIMEFRAME}_adjsplit.txt"
+  },
+  {
+    "objectID": "usindex.html",
+    "href": "usindex.html",
+    "title": "DATAFINHUB",
+    "section": "",
+    "text": "US INDEX API\n\nhttps://datafinhub.s3.ca-central-1.amazonaws.com/\n\nTICKER OPTION {TICKER}\n\nThe ticker is available on the ticker list page\n\nTIME FRAME OPTION {TIMEFRAME}\n\nDaily =&gt; “1day”\nEach 1 hour =&gt; “1hour”\nEach 30 minutes =&gt; “30min”\nEach 5 minutes =&gt; “5min”\nEach 1 minutes =&gt; “1min”\n\nURL ENPOINT\n\nhttps://datafinhub.s3.ca-central-1.amazonaws.com/{TICKER}_full_{TIMEFRAME}.txt"
+  },
+  {
+    "objectID": "future.html",
+    "href": "future.html",
+    "title": "DATAFINHUB",
+    "section": "",
+    "text": "FUTURE API\nTICKER OPTION {TICKER}\nTIME FRAME OPTION {TIMEFRAME}\nADJUSTMENT OF TIME SERIES {ADJUSTMENT}"
+  },
+  {
+    "objectID": "etf.html",
+    "href": "etf.html",
+    "title": "DATAFINHUB",
+    "section": "",
+    "text": "ETF API\nTICKER OPTION {TICKER}\nTIME FRAME OPTION {TIMEFRAME}\nURL ENPOINT"
+  },
+  {
+    "objectID": "etf.html#exemple-of-request-using-r",
+    "href": "etf.html#exemple-of-request-using-r",
+    "title": "DATAFINHUB",
+    "section": "Exemple of request using R",
+    "text": "Exemple of request using R\n\nSPY ETF at 30 minutes frequency\n\nX &lt;- read.table(file = 'https://c11a.myqnapcloud.com/share.cgi?tunnel_agent_id=65322b8c8f72b840d1ae7dc2&ssid=522d250037854766823c424fd15b7641&filename=SPY.txt&fid=522d250037854766823c424fd15b7641&path=%2Fetf%2F30min&openfolder=forcedownload',\n                      sep = \",\",\n                      header = FALSE)\ntail(X)\n\n                        V1       V2     V3       V4     V5     V6\n146725 2023-10-20 17:00:00 420.9000 421.05 420.8692 421.02 114989\n146726 2023-10-20 17:30:00 421.0000 421.00 420.8500 420.85 103285\n146727 2023-10-20 18:00:00 420.8500 420.85 420.6500 420.78  35207\n146728 2023-10-20 18:30:00 420.7912 420.85 420.7500 420.85   5653\n146729 2023-10-20 19:00:00 420.8400 420.84 420.7500 420.75   3338\n146730 2023-10-20 19:30:00 420.7600 420.80 420.6300 420.63   5926\n\n\n\n\nSPY ETF at 30 minutes frequency\n\nX &lt;- read.table(file = 'https://c11a.myqnapcloud.com/share.cgi?tunnel_agent_id=65322b8c8f72b840d1ae7dc2&ssid=522d250037854766823c424fd15b7641&filename=SPY.txt&fid=522d250037854766823c424fd15b7641&path=%2Fetf%2F1min&openfolder=forcedownload',\n                      sep = \",\",\n                      header = FALSE)\ntail(X)\n\n                         V1     V2     V3     V4     V5   V6\n3470517 2023-10-20 19:41:00 420.77 420.77 420.77 420.77  136\n3470518 2023-10-20 19:43:00 420.70 420.70 420.65 420.65  500\n3470519 2023-10-20 19:44:00 420.69 420.70 420.69 420.69 1057\n3470520 2023-10-20 19:46:00 420.69 420.70 420.69 420.70  724\n3470521 2023-10-20 19:47:00 420.75 420.75 420.75 420.75  500\n3470522 2023-10-20 19:48:00 420.63 420.63 420.63 420.63  137"
+  },
+  {
+    "objectID": "etf.html#etf-ticker-list",
+    "href": "etf.html#etf-ticker-list",
+    "title": "DATAFINHUB",
+    "section": "ETF TICKER LIST",
+    "text": "ETF TICKER LIST"
+  },
+  {
+    "objectID": "etf.html#etf-api",
+    "href": "etf.html#etf-api",
+    "title": "DATAFINHUB",
+    "section": "ETF API",
+    "text": "ETF API\n\nhttps://c11a.myqnapcloud.com/share.cgi?tunnel_agent_id=65322b8c8f72b840d1ae7dc2&ssid=522d250037854766823c424fd15b7641&filename={TICKER}.txt&fid=522d250037854766823c424fd15b7641&path=%2Fetf%2F{TIME-FREQUENCY}&openfolder=forcedownload\n\nTICKER OPTION {TICKER}\n\nThe ticker is available on the ticker list page\n\nTIME FRAME OPTION {TIMEFRAME}\n\nDaily =&gt; “1day”\nEach 1 hour =&gt; “1hour”\nEach 30 minutes =&gt; “30min”\nEach 5 minutes =&gt; “5min”\nEach 1 minutes =&gt; “1min”"
+  },
+  {
+    "objectID": "fx.html#fx-api",
+    "href": "fx.html#fx-api",
+    "title": "DATAFINHUB",
+    "section": "FX API",
+    "text": "FX API\n\nhttps://c11a.myqnapcloud.com/share.cgi?tunnel_agent_id=65322b8c8f72b840d1ae7dc2&ssid=522d250037854766823c424fd15b7641&filename={TICKER}.txt&fid=522d250037854766823c424fd15b7641&path=%2Ffx%2F{TIME-FREQUENCY}&openfolder=forcedownload\n\nTICKER OPTION {TICKER}\n\nThe ticker is available on the ticker list page\n\nTIME FRAME OPTION {TIMEFRAME}\n\nDaily =&gt; “1day”\nEach 1 hour =&gt; “1hour”\nEach 30 minutes =&gt; “30min”\nEach 5 minutes =&gt; “5min”\nEach 1 minutes =&gt; “1min”"
+  },
+  {
+    "objectID": "fx.html#fx-ticker-listg",
+    "href": "fx.html#fx-ticker-listg",
+    "title": "DATAFINHUB",
+    "section": "FX TICKER LISTG",
+    "text": "FX TICKER LISTG"
+  },
+  {
+    "objectID": "stock.html#stock-api",
+    "href": "stock.html#stock-api",
+    "title": "DATAFINHUB",
+    "section": "STOCK API",
+    "text": "STOCK API\n\nhttps://c11a.myqnapcloud.com/share.cgi?tunnel_agent_id=65322b8c8f72b840d1ae7dc2&ssid=522d250037854766823c424fd15b7641&filename={TICKER}.txt&fid=522d250037854766823c424fd15b7641&path=%2Fstock%2F{TIME-FREQUENCY}&openfolder=forcedownload\n\nTICKER OPTION {TICKER}\n\nThe ticker is available on the ticker list page\n\nTIME FRAME OPTION {TIMEFRAME}\n\nDaily =&gt; “1day”\nEach 1 hour =&gt; “1hour”\nEach 30 minutes =&gt; “30min”\nEach 5 minutes =&gt; “5min”\nEach 1 minutes =&gt; “1min”"
+  },
+  {
+    "objectID": "stock.html#exemple-of-request-using-r",
+    "href": "stock.html#exemple-of-request-using-r",
+    "title": "DATAFINHUB",
+    "section": "Exemple of request using R",
+    "text": "Exemple of request using R\n\nAAPL at 30 minutes frequency\n\nX &lt;- read.table(file = 'https://c11a.myqnapcloud.com/share.cgi?tunnel_agent_id=65322b8c8f72b840d1ae7dc2&ssid=522d250037854766823c424fd15b7641&filename=AAPL.txt&fid=522d250037854766823c424fd15b7641&path=%2Fstock%2F30min&openfolder=forcedownload',\n                      sep = \",\",\n                      header = FALSE)\ntail(X)\n\n                        V1       V2       V3     V4     V5    V6\n139063 2023-10-20 17:00:00 172.9406 172.9900 172.88 172.92 38432\n139064 2023-10-20 17:30:00 172.9300 172.9300 172.86 172.87 12944\n139065 2023-10-20 18:00:00 172.8600 172.8800 172.82 172.85  5788\n139066 2023-10-20 18:30:00 172.8100 172.8700 172.70 172.73  6535\n139067 2023-10-20 19:00:00 172.7600 172.7799 172.71 172.72  5933\n139068 2023-10-20 19:30:00 172.7200 172.7200 172.68 172.68  2699"
+  },
+  {
+    "objectID": "stock.html#stock-ticker-list",
+    "href": "stock.html#stock-ticker-list",
+    "title": "DATAFINHUB",
+    "section": "STOCK TICKER LIST",
+    "text": "STOCK TICKER LIST"
+  },
+  {
+    "objectID": "crypto.html#exemple-of-request-using-r",
+    "href": "crypto.html#exemple-of-request-using-r",
+    "title": "DATAFINHUB",
+    "section": "Exemple of request using R",
+    "text": "Exemple of request using R\n\nBTC at 30 minutes frequency\n\nX &lt;- read.table(file = 'https://c11a.myqnapcloud.com/share.cgi?tunnel_agent_id=65322b8c8f72b840d1ae7dc2&ssid=522d250037854766823c424fd15b7641&filename=BTC.txt&fid=522d250037854766823c424fd15b7641&path=%2Fcrypto%2F30min&openfolder=forcedownload',\n                      sep = \",\",\n                      header = FALSE)\ntail(X)\n\n                        V1       V2    V3       V4       V5       V6\n183931 2023-10-22 21:00:00 29847.80 29871 29788.80 29814.39 441.2671\n183932 2023-10-22 21:30:00 29805.30 29864 29705.97 29760.05 431.0958\n183933 2023-10-22 22:00:00 29760.05 29870 29716.30 29842.00 170.7293\n183934 2023-10-22 22:30:00 29840.97 30069 29827.90 30044.48 536.4477\n183935 2023-10-22 23:00:00 30036.20 30071 29926.00 29960.01 382.2319\n183936 2023-10-22 23:30:00 29959.68 30041 29944.77 29998.19 261.8423"
+  },
+  {
+    "objectID": "crypto.html#cryto-list",
+    "href": "crypto.html#cryto-list",
+    "title": "DATAFINHUB",
+    "section": "CRYTO LIST",
+    "text": "CRYTO LIST"
+  },
+  {
+    "objectID": "usindex.html#us-index-api",
+    "href": "usindex.html#us-index-api",
+    "title": "DATAFINHUB",
+    "section": "US INDEX API",
+    "text": "US INDEX API\n\nhttps://c11a.myqnapcloud.com/share.cgi?tunnel_agent_id=65322b8c8f72b840d1ae7dc2&ssid=522d250037854766823c424fd15b7641&filename={TICKER}.txt&fid=522d250037854766823c424fd15b7641&path=%2Findex%2F{TIME-FREQUENCY}&openfolder=forcedownload\n\nTICKER OPTION {TICKER}\n\nThe ticker is available on the ticker list page\n\nTIME FRAME OPTION {TIMEFRAME}\n\nDaily =&gt; “1day”\nEach 1 hour =&gt; “1hour”\nEach 30 minutes =&gt; “30min”\nEach 5 minutes =&gt; “5min”\nEach 1 minutes =&gt; “1min”"
+  },
+  {
+    "objectID": "usindex.html#exemple-of-request-using-r",
+    "href": "usindex.html#exemple-of-request-using-r",
+    "title": "DATAFINHUB",
+    "section": "Exemple of request using R",
+    "text": "Exemple of request using R\n\nSPX INDEX at 30 minutes frequency\n\nX &lt;- read.table(file = 'https://c11a.myqnapcloud.com/share.cgi?tunnel_agent_id=65322b8c8f72b840d1ae7dc2&ssid=522d250037854766823c424fd15b7641&filename=SPX.txt&fid=522d250037854766823c424fd15b7641&path=%2Findex%2F30min&openfolder=forcedownload',\n                      sep = \",\",\n                      header = FALSE)\ntail(X)\n\n                       V1      V2      V3      V4      V5\n58093 2023-10-20 13:30:00 4253.17 4257.59 4245.91 4253.64\n58094 2023-10-20 14:00:00 4253.81 4254.28 4236.90 4238.10\n58095 2023-10-20 14:30:00 4238.11 4244.32 4234.58 4237.98\n58096 2023-10-20 15:00:00 4238.02 4242.41 4229.66 4235.35\n58097 2023-10-20 15:30:00 4235.19 4237.10 4223.03 4223.58\n58098 2023-10-20 16:00:00 4223.52 4224.16 4223.52 4224.16\n\n\n\n\nSPX INDEX at 1 minutes frequency\n\nX &lt;- read.table(file = 'https://c11a.myqnapcloud.com/share.cgi?tunnel_agent_id=65322b8c8f72b840d1ae7dc2&ssid=522d250037854766823c424fd15b7641&filename=SPX.txt&fid=522d250037854766823c424fd15b7641&path=%2Findex%2F1min&openfolder=forcedownload',\n                      sep = \",\",\n                      header = FALSE)\ntail(X)\n\n                         V1      V2      V3      V4      V5\n1639375 2023-10-20 16:00:00 4223.52 4224.09 4223.52 4224.09\n1639376 2023-10-20 16:01:00 4224.09 4224.16 4224.09 4224.15\n1639377 2023-10-20 16:02:00 4224.15 4224.16 4224.15 4224.16\n1639378 2023-10-20 16:03:00 4224.16 4224.16 4224.16 4224.16\n1639379 2023-10-20 16:04:00 4224.16 4224.16 4224.16 4224.16\n1639380 2023-10-20 16:05:00 4224.16 4224.16 4224.16 4224.16"
+  },
+  {
+    "objectID": "usindex.html#index-ticker-list",
+    "href": "usindex.html#index-ticker-list",
+    "title": "DATAFINHUB",
+    "section": "INDEX TICKER LIST",
+    "text": "INDEX TICKER LIST"
+  },
+  {
+    "objectID": "future.html#exemple-of-request-using-r",
+    "href": "future.html#exemple-of-request-using-r",
+    "title": "DATAFINHUB",
+    "section": "Exemple of request using R",
+    "text": "Exemple of request using R\n\nCL future at 30 minutes frequency\n\nX &lt;- read.table(file = 'https://c11a.myqnapcloud.com/share.cgi?tunnel_agent_id=65322b8c8f72b840d1ae7dc2&ssid=522d250037854766823c424fd15b7641&filename=CL.txt&fid=522d250037854766823c424fd15b7641&path=%2Ffutures%2F30min%2Fadjusted&openfolder=forcedownload',\n                      sep = \",\",\n                      header = FALSE)\ntail(X)\n\n                        V1    V2    V3    V4    V5    V6\n188749 2023-10-20 14:00:00 88.34 88.41 87.53 88.08 28872\n188750 2023-10-20 14:30:00 88.07 88.23 87.82 88.18  7196\n188751 2023-10-20 15:00:00 88.17 88.31 88.04 88.29  3152\n188752 2023-10-20 15:30:00 88.29 88.35 88.16 88.19  3150\n188753 2023-10-20 16:00:00 88.18 88.24 88.11 88.12  1131\n188754 2023-10-20 16:30:00 88.13 88.38 88.11 88.30  1272"
+  },
+  {
+    "objectID": "future.html#future-list",
+    "href": "future.html#future-list",
+    "title": "DATAFINHUB",
+    "section": "FUTURE LIST",
+    "text": "FUTURE LIST"
+  },
+  {
+    "objectID": "fx.html#exemple-of-request-using-r",
+    "href": "fx.html#exemple-of-request-using-r",
+    "title": "DATAFINHUB",
+    "section": "Exemple of request using R",
+    "text": "Exemple of request using R\n\nUSDCAD at 30 minutes frequency\n\nX &lt;- read.table(file = 'https://c11a.myqnapcloud.com/share.cgi?tunnel_agent_id=65322b8c8f72b840d1ae7dc2&ssid=522d250037854766823c424fd15b7641&filename=USDCAD.txt&fid=522d250037854766823c424fd15b7641&path=%2Ffx%2F30min&openfolder=forcedownload',\n                      sep = \",\",\n                      header = TRUE)\ntail(X)\n\n       X20100101 X00.30.00  X1.053 X1.053.1 X1.053.2 X1.053.3   X1\n172573  20231020  14:00:00 1.36997  1.37116  1.36950  1.37078 4886\n172574  20231020  14:30:00 1.37070  1.37096  1.36960  1.37026 4058\n172575  20231020  15:00:00 1.37023  1.37070  1.36970  1.37036 3937\n172576  20231020  15:30:00 1.37037  1.37116  1.37000  1.37113 4077\n172577  20231020  16:00:00 1.37115  1.37126  1.37060  1.37105 1979\n172578  20231020  16:30:00 1.37101  1.37180  1.36921  1.37150 2509"
+  },
+  {
+    "objectID": "licence.html#definitions",
+    "href": "licence.html#definitions",
+    "title": "DataFinHub License Agreement",
+    "section": "1. Definitions",
+    "text": "1. Definitions\n\nServices: Refers to the intraday data services provided by DataFinHub, covering various financial instruments including etc, crypto, stock, fx, future, and index.\nLicensee: Refers to the individual or entity using the Services.\nLicensor: Refers to DataFinHub.\nEffective Date: The date this Agreement is accepted by the Licensee."
+  },
+  {
+    "objectID": "licence.html#grant-of-license",
+    "href": "licence.html#grant-of-license",
+    "title": "DataFinHub License Agreement",
+    "section": "2. Grant of License",
+    "text": "2. Grant of License\nDataFinHub grants Licensee a non-exclusive, revocable, limited license to use the Services, subject to the terms and conditions of this Agreement."
+  },
+  {
+    "objectID": "licence.html#term-and-termination",
+    "href": "licence.html#term-and-termination",
+    "title": "DataFinHub License Agreement",
+    "section": "3. Term and Termination",
+    "text": "3. Term and Termination\nThis Agreement is effective as of the Effective Date and will remain in effect until terminated by either party.\nDataFinHub reserves the right to terminate this Agreement and Licensee’s access to the Services at any time, with or without cause."
+  },
+  {
+    "objectID": "licence.html#intellectual-property",
+    "href": "licence.html#intellectual-property",
+    "title": "DataFinHub License Agreement",
+    "section": "4. Intellectual Property",
+    "text": "4. Intellectual Property\nThe Services and all related intellectual property rights are owned by DataFinHub. Licensee agrees not to reproduce, distribute, or create derivative works based on the Services without prior written consent from DataFinHub."
+  },
+  {
+    "objectID": "licence.html#disclaimers",
+    "href": "licence.html#disclaimers",
+    "title": "DataFinHub License Agreement",
+    "section": "5. Disclaimers",
+    "text": "5. Disclaimers\nThe Services are provided “as is” and without warranties of any kind, either express or implied. DataFinHub makes no representations or warranties regarding the accuracy or completeness of the data provided for etc, crypto, stock, fx, future, or index."
+  },
+  {
+    "objectID": "licence.html#governing-law",
+    "href": "licence.html#governing-law",
+    "title": "DataFinHub License Agreement",
+    "section": "6. Governing Law",
+    "text": "6. Governing Law\nThis Agreement is governed by and construed in accordance with the laws of [Québec, Canada]. Any disputes arising from or relating to this Agreement will be subject to the exclusive jurisdiction of the courts in [Québec, Canada]."
+  },
+  {
+    "objectID": "licence.html#contact-information",
+    "href": "licence.html#contact-information",
+    "title": "DataFinHub License Agreement",
+    "section": "7. Contact Information",
+    "text": "7. Contact Information\nFor questions or concerns regarding this Agreement, please contact:\nDataFinHub [1820 rue des intendants, Québec]\n\nBy accessing or using the Services, you acknowledge that you have read, understood, and agreed to be bound by the terms of this Agreement.\nLast Updated: [October 18th, 2023]"
+  }
+]
